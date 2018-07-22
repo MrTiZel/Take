@@ -4,7 +4,7 @@
 #mashead{
     background: url("../img/bgMasthead.jpg")  no-repeat center left;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
     color: $textColor1;
 
     .container{
@@ -25,8 +25,15 @@
             }
         }
     }
+    @include W480{
 
-    @include Small650{
-
+        .container{
+            .row{
+                h1{
+                    font-size: 38px;
+                }
+            }
+        }
     }
+
 }

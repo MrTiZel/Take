@@ -1,5 +1,10 @@
-@mixin Small650(){
+@mixin W768(){
     @media screen and (max-width: 769px){
+        @content;
+    }
+}
+@mixin W480(){
+    @media screen and (max-width: 480px){
         @content;
     }
 }

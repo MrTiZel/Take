@@ -1,2 +1,32 @@
 @import "partials/params";
 @import "partials/mixins";
+
+#textNew{
+    .container{
+        .row{
+            position: relative;
+            top: -100px;
+            h2{
+                font-size: 35px;
+            }
+            p{
+                color: $textColor4;
+                font-size: 14px;
+            }
+        }
+    }
+    @include W480{
+            .container{
+                .row{
+                    position: relative;
+                    top: -150px;
+                    h2{
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 16px;
+                }
+            }
+        }
+    }
+}
