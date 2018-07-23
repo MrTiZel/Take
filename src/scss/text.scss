@@ -3,6 +3,7 @@
 
 #textNew{
     .container{
+        @include containerWidth;
         .row{
             position: relative;
             top: -100px;

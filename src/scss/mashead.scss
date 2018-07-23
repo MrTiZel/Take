@@ -8,7 +8,7 @@
     color: $textColor1;
 
     .container{
-        max-width: 1170px;
+        @include containerWidth;
 
         .logo{
             padding-top: 5%;

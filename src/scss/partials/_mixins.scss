@@ -1,3 +1,7 @@
+@mixin containerWidth{
+    max-width: 1170px; 
+}
+
 @mixin W768(){
     @media screen and (max-width: 769px){
         @content;
