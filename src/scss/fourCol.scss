@@ -2,6 +2,7 @@
 @import "partials/mixins";
 
 #fourCol {
+    margin-bottom: 100px;
     .container {
         @include containerWidth;
 

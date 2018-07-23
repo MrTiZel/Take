@@ -1,2 +1,70 @@
 @import "partials/params";
 @import "partials/mixins";
+
+#fullImage {
+    background: url("../img/bgFullImage.jpg") no-repeat center left;
+    background-size: cover;
+    height: 100vh;
+
+    .container {
+        @include containerWidth;
+        .row {
+            position: relative;
+            top: 150px;
+            height: 100vh;
+            color: $textColor1;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            h2 {
+                font-size: 60px;
+            }
+
+            p {
+                max-width: 400px;
+                font-size: 13px;
+            }
+
+            a {
+                color: $textColor1;
+                font-size: 14px;
+            }
+        }
+    }
+    @include W768 {
+        .container {
+            .row {
+                h2 {
+                    font-size: 45px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+
+                a {
+                    color: $textColor1;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    @include W480 {
+        .container {
+            .row {
+                h2 {
+                    font-size: 30px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+
+                a {
+                    color: $textColor1;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
