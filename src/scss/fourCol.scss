@@ -1,2 +1,43 @@
 @import "partials/params";
 @import "partials/mixins";
+
+#fourCol {
+    .container {
+        @include containerWidth;
+
+        .row {
+            h2.lookH2 {
+                font-size: 35px;
+                font-weight: lighter;
+                margin-bottom: 50px;
+            }
+
+            h2 {
+                font-size: 13px;
+            }
+
+            p {
+                color: $textColor3;
+                font-size: 14px;
+            }
+        }
+    }
+
+    @include W480{
+        .container {
+            .row {
+                h2.lookH2 {
+                    font-size: 30px;
+                }
+
+                h2 {
+                    font-size: 16px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

@@ -6,9 +6,10 @@
         @include containerWidth;
         .row{
             position: relative;
-            top: -100px;
+            top: -50px;
             h2{
                 font-size: 35px;
+                margin-bottom: 20px;
             }
             p{
                 color: $textColor4;
