@@ -25,9 +25,17 @@
                 font-size: 13px;
             }
 
-            a {
+            a{
+                display: flex;
+                align-items: center;
                 color: $textColor1;
                 font-size: 14px;
+                text-decoration: none;
+
+                i{
+                    margin-top: 5px;
+                    margin-left: 20px;
+                }
             }
         }
     }
