@@ -2,11 +2,57 @@
 @import "partials/mixins";
 
 #mainFooter{
-    background: $bgColor3;
+    background: $bgColor6;
+    color: $textColor1;
     width: 100%;
-
+    padding-top: 150px;
+    padding-bottom: 150px;
     .container{
+        @include containerWidth;
+        .row{
+            h3, h4{
+                font-size: 13px;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 13px;
+            }
+            .includText{
+                margin-top: 70px;
+            }
+            .sendMail{
 
-        .row{}
+                .inputMail{
+                    input{
+                        float: left;
+                    }
+                    input[type="text"]{
+                        width: 400px;
+                        height: 50px;
+                        box-sizing: border-box;
+                        padding: 10px;
+                        border: 0;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                    }
+                    input[type="submit"]{
+                        color: $textColor1;
+                        text-align: center;
+                        width: 70px;
+                        height: 50px;
+                        background: $bgColor1;
+                        border: 0;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+                }
+                p{
+                    margin-top: 20px;
+                    float: left;
+                    font-size: 12px;
+                    color: $textColor5;
+                }
+            }
+        }
     }
 }
