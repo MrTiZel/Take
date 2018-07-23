@@ -1,2 +1,12 @@
 @import "partials/params";
 @import "partials/mixins";
+
+#mainFooter{
+    background: $bgColor3;
+    width: 100%;
+
+    .container{
+
+        .row{}
+    }
+}

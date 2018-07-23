@@ -4,10 +4,9 @@
 #buying{
 background: $bgColor5;
     .container{
-
+        @include containerWidth;
         .row{
-            padding-top: 100px;
-            padding-bottom: 100px;
+            padding: 100px 15px 100px 15px;
             .solo, .team{
                 display: block;
                 max-width: 570px;
