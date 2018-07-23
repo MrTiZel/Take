@@ -40,19 +40,30 @@
                         text-align: center;
                         width: 70px;
                         height: 50px;
-                        background: $bgColor1;
+                        background: $bgColor1 url("../img/check.png") no-repeat center center;
                         border: 0;
                         border-top-right-radius: 5px;
                         border-bottom-right-radius: 5px;
                     }
                 }
                 p{
+                    max-width: 400px;
                     margin-top: 20px;
                     float: left;
                     font-size: 12px;
                     color: $textColor5;
                 }
             }
+        }
+    }
+    @include W768{
+        input[type="text"]{
+            width: 200px !important;
+        }
+    }
+    @include W480{
+        input[type="text"]{
+            width: 100px !important;
         }
     }
 }
