@@ -1,39 +1,44 @@
 @import "partials/params";
 @import "partials/mixins";
 
-#mashead{
-    background: url("../img/bgMasthead.jpg")  no-repeat center left;
+#mashead {
+    background: url("../img/bgMasthead.jpg") no-repeat center left;
     background-size: cover;
     height: 120vh;
     color: $textColor1;
 
-    .container{
+    .container {
         @include containerWidth;
 
-        .logo{
+        .logo {
             padding-top: 5%;
         }
-        .row{
+
+        .row {
             height: 60vh;
-            h1{
+
+            h1 {
                 font-weight: lighter;
                 font-size: 60px;
             }
-            p{
+
+            p {
                 font-size: 13px;
                 max-width: 420px;
             }
         }
     }
-    @include W480{
-
-        .container{
-            .row{
-                h1{
+    @include W480 {
+        .container {
+            .row {
+                h1 {
                     font-size: 38px;
+                }
+
+                p {
+                    max-width: 420px;
                 }
             }
         }
     }
-
 }
